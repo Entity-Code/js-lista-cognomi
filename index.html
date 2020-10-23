@@ -7,14 +7,32 @@
    </head>
    <body>
 
-      <ul id="lista">
+      <form id="form" action="index.html" method="post">
 
-      </ul>
+         <!-- display input -->
+         <div id="input" class="dBlock">
+            <h1>Inserisci il tuo cognome</h1>
+            <input id="inputCognome" type="text">
+            <button id="invia" type="button" name="button">Invia</button>
+         </div>
 
-      <div id="containerPosizione">
-         
-         <h1 id="posizione"></h1>
-      </div>
+
+
+         <!-- display output-->
+         <div id="risultati" class="dNone">
+            <h1>Ecco la lista !</h1>
+            <ul id="lista">
+               <!-- lista cognomi dinamica -->
+            </ul>
+
+            <div id="containerPosizione">
+               <h1 id="posizione"></h1>
+            </div>
+         </div>
+
+
+      </form>
+
       <script src="js/script.js" charset="utf-8"></script>
    </body>
 </html>
