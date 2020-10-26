@@ -1,9 +1,9 @@
 /* regole generali */
-/* *{
+*{
   margin:0;
   padding:0;
   box-sizing: border-box;
-} */
+}
 
 body{
    background-color: #4863A0;
@@ -26,6 +26,7 @@ form{
    text-align: center;
    width: 100%;
 }
+
 ul{
    list-style-type: none;
    font-size: 20px;
@@ -34,6 +35,7 @@ ul{
 ul li{
    padding: 5px 0;
 }
+
 input{
    border: none;
    outline: none;
@@ -43,7 +45,6 @@ input{
    text-align: center;
    background-color: #fafafa;
 }
-
 
 
 button{
@@ -78,9 +79,6 @@ button:active{
 #risultati{
    padding-bottom: 50px;
 }
-#risultati > h1{
-   padding-left: 50px;
-}
 
 /* js */
 .dBlock{
@@ -90,6 +88,6 @@ button:active{
    display: none;
 }
 
-.red{
+span{
    color: red;
 }

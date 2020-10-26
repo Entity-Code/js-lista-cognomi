@@ -1,15 +1,13 @@
+// ARRAY LISTA COGNOMI
+var listaCognome = ["barretta","tummolillo","cante","campanile","barbato","rossi","ferrari","russo","bianchi"];
 
 var invia = document.getElementById("invia");
 invia.addEventListener("click",
 	function() {
-      // ARRAY LISTA COGNOMI
-     var listaCognome = ["barretta","tummolillo","cante","campanile","barbato","rossi","ferrari","russo","bianchi"];
-
      // INPUT COGNOME UTENTE
-     var inputCognome = document.getElementById("inputCognome");
-
+     var inputCognome = document.getElementById("inputCognome").value;
      //AGGIUNGO CON PUSH IL COGNOME INSERITO DALL'UTENTE
-     listaCognome.push(inputCognome.value);
+     listaCognome.push(inputCognome);
 
      // ORDINO ALFABETICAMENTE LA LISTA
      listaCognome.sort(confrontaS);
@@ -35,15 +33,11 @@ invia.addEventListener("click",
            i++;
         }
 
-
         document.getElementById("lista").innerHTML = listaCognomeli;
 
-
-
         // STAMPO LA POSIZIONE DEL COGNOME INSERITO NELLA LISTA "UMANAMENTE"
-        var posizione = listaCognome.indexOf(inputCognome.value);
+        var posizione = listaCognome.indexOf(inputCognome);
         document.getElementById("posizione").innerHTML =  "Ti trovi nella posizione numero: " + (++posizione);
-
 
       // DISPLAY ON/OFF
       // document.getElementById("risultati").reset();
